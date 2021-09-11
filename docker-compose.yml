@@ -1,0 +1,60 @@
+version: "3.2"
+services:
+  php:
+    build: "./php/"
+    networks:
+      - backend
+    volumes:
+      - ./public_html/:/var/www/html/
+  apache:
+    build: "./apache/"
+    depends_on:
+      - php
+      - mysql
+    networks:
+      - frontend
+      - backend
+    ports:
+      - "8081:80"
+    volumes:
+      - ./public_html/:/var/www/html/
+  mysql:
+    image: mariadb
+    networks:
+      - backend
+    environment:
+      - MYSQL_ROOT_PASSWORD=khaldrogo
+    volumes:
+      - ./mysqlData/:/home/mysqlData
+      - ./mysql_db:/var/lib/mysql
+    ports:
+      - 3306:3306
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin
+    ports:
+      - 8082:80
+    environment:
+      PMA_HOST: mysql
+      PMA_USER: root
+      PMA_PASSWORD: khaldrogo
+    networks:
+      - backend
+      - frontend
+  mysql-workbench:
+    image: ghcr.io/linuxserver/mysql-workbench
+    container_name: mysql-workbench
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=Africa/Nairobi
+    volumes:
+      - ./workbenchconf:/config
+    ports:
+      - 8083:3000
+    cap_add:
+      - IPC_LOCK
+    networks: 
+      - backend
+networks:
+  frontend:
+  backend:

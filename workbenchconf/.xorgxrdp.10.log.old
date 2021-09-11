@@ -1,0 +1,753 @@
+[ 35447.090] 
+X.Org X Server 1.20.9
+X Protocol Version 11, Revision 0
+[ 35447.090] Build Operating System: Linux 4.15.0-140-generic x86_64 Ubuntu
+[ 35447.090] Current Operating System: Linux 8888ec6f2e74 5.11.0-25-generic #27~20.04.1-Ubuntu SMP Tue Jul 13 17:41:23 UTC 2021 x86_64
+[ 35447.091] Kernel command line: BOOT_IMAGE=/boot/vmlinuz-5.11.0-25-generic root=UUID=f6bc0739-2a93-424a-9a63-6b6b9a609a54 ro quiet splash vt.handoff=7
+[ 35447.091] Build Date: 08 April 2021  12:29:22PM
+[ 35447.091] xorg-server 2:1.20.9-2ubuntu1.2~20.04.2 (For technical support please see http://www.ubuntu.com/support) 
+[ 35447.091] Current version of pixman: 0.38.4
+[ 35447.092] 	Before reporting problems, check http://wiki.x.org
+	to make sure that you have the latest version.
+[ 35447.092] Markers: (--) probed, (**) from config file, (==) default setting,
+	(++) from command line, (!!) notice, (II) informational,
+	(WW) warning, (EE) error, (NI) not implemented, (??) unknown.
+[ 35447.093] (++) Log file: ".xorgxrdp.10.log", Time: Thu Aug 12 12:12:44 2021
+[ 35447.096] (++) Using config file: "/etc/X11/xrdp/xorg.conf"
+[ 35447.096] (==) Using system config directory "/usr/share/X11/xorg.conf.d"
+[ 35447.097] (==) ServerLayout "X11 Server"
+[ 35447.097] (**) |-->Screen "Screen (xrdpdev)" (0)
+[ 35447.097] (**) |   |-->Monitor "Monitor"
+[ 35447.098] (**) |   |-->Device "Video Card (xrdpdev)"
+[ 35447.098] (**) |-->Input Device "xrdpMouse"
+[ 35447.098] (**) |-->Input Device "xrdpKeyboard"
+[ 35447.098] (**) Option "DontVTSwitch" "on"
+[ 35447.098] (**) Option "AutoAddDevices" "off"
+[ 35447.099] (**) Not automatically adding devices
+[ 35447.099] (==) Automatically enabling devices
+[ 35447.099] (==) Automatically adding GPU devices
+[ 35447.099] (==) Automatically binding GPU devices
+[ 35447.099] (==) Max clients allowed: 256, resource mask: 0x1fffff
+[ 35447.104] (WW) The directory "/usr/share/fonts/X11/cyrillic" does not exist.
+[ 35447.105] 	Entry deleted from font path.
+[ 35447.105] (WW) The directory "/usr/share/fonts/X11/100dpi/" does not exist.
+[ 35447.105] 	Entry deleted from font path.
+[ 35447.105] (WW) The directory "/usr/share/fonts/X11/75dpi/" does not exist.
+[ 35447.105] 	Entry deleted from font path.
+[ 35447.105] (WW) The directory "/usr/share/fonts/X11/Type1" does not exist.
+[ 35447.105] 	Entry deleted from font path.
+[ 35447.106] (WW) The directory "/usr/share/fonts/X11/100dpi" does not exist.
+[ 35447.106] 	Entry deleted from font path.
+[ 35447.106] (WW) The directory "/usr/share/fonts/X11/75dpi" does not exist.
+[ 35447.106] 	Entry deleted from font path.
+[ 35447.106] (==) FontPath set to:
+	/usr/share/fonts/X11/misc,
+	built-ins
+[ 35447.106] (==) ModulePath set to "/usr/lib/xorg/modules"
+[ 35447.106] (II) Loader magic: 0x55911a166020
+[ 35447.106] (II) Module ABI versions:
+[ 35447.106] 	X.Org ANSI C Emulation: 0.4
+[ 35447.106] 	X.Org Video Driver: 24.1
+[ 35447.106] 	X.Org XInput driver : 24.1
+[ 35447.106] 	X.Org Server Extension : 10.0
+[ 35447.107] (EE) dbus-core: error connecting to system bus: org.freedesktop.DBus.Error.FileNotFound (Failed to connect to socket /var/run/dbus/system_bus_socket: No such file or directory)
+[ 35447.108] (II) xfree86: Adding drm device (/dev/dri/card0)
+[ 35447.112] (--) PCI:*(0@0:2:0) 8086:1916:1028:06dc rev 7, Mem @ 0xe0000000/16777216, 0xd0000000/268435456, I/O @ 0x0000f000/64, BIOS @ 0x????????/131072
+[ 35447.113] (II) "glx" will be loaded. This was enabled by default and also specified in the config file.
+[ 35447.113] (II) LoadModule: "dbe"
+[ 35447.113] (II) Module "dbe" already built-in
+[ 35447.113] (II) LoadModule: "ddc"
+[ 35447.114] (II) Module "ddc" already built-in
+[ 35447.114] (II) LoadModule: "extmod"
+[ 35447.114] (II) Module "extmod" already built-in
+[ 35447.114] (II) LoadModule: "glx"
+[ 35447.115] (II) Loading /usr/lib/xorg/modules/extensions/libglx.so
+[ 35447.125] (II) Module glx: vendor="X.Org Foundation"
+[ 35447.125] 	compiled for 1.20.9, module version = 1.0.0
+[ 35447.125] 	ABI class: X.Org Server Extension, version 10.0
+[ 35447.126] (II) LoadModule: "int10"
+[ 35447.126] (II) Loading /usr/lib/xorg/modules/libint10.so
+[ 35447.128] (II) Module int10: vendor="X.Org Foundation"
+[ 35447.128] 	compiled for 1.20.9, module version = 1.0.0
+[ 35447.128] 	ABI class: X.Org Video Driver, version 24.1
+[ 35447.128] (II) LoadModule: "record"
+[ 35447.128] (II) Module "record" already built-in
+[ 35447.128] (II) LoadModule: "vbe"
+[ 35447.129] (II) Loading /usr/lib/xorg/modules/libvbe.so
+[ 35447.129] (II) Module vbe: vendor="X.Org Foundation"
+[ 35447.130] 	compiled for 1.20.9, module version = 1.1.0
+[ 35447.130] 	ABI class: X.Org Video Driver, version 24.1
+[ 35447.130] (II) LoadModule: "glamoregl"
+[ 35447.130] (II) Loading /usr/lib/xorg/modules/libglamoregl.so
+[ 35447.139] (II) Module glamoregl: vendor="X.Org Foundation"
+[ 35447.139] 	compiled for 1.20.9, module version = 1.0.1
+[ 35447.143] 	ABI class: X.Org ANSI C Emulation, version 0.4
+[ 35447.143] (II) LoadModule: "xorgxrdp"
+[ 35447.144] (II) Loading /usr/lib/xorg/modules/libxorgxrdp.so
+[ 35447.145] (II) Module XORGXRDP: vendor="X.Org Foundation"
+[ 35447.145] 	compiled for 1.20.6, module version = 0.2.12
+[ 35447.145] 	ABI class: X.Org Video Driver, version 24.0
+[ 35447.145] xorgxrdpSetup:
+[ 35447.146] (II) LoadModule: "fb"
+[ 35447.146] (II) Loading /usr/lib/xorg/modules/libfb.so
+[ 35447.147] (II) Module fb: vendor="X.Org Foundation"
+[ 35447.148] 	compiled for 1.20.9, module version = 1.0.0
+[ 35447.148] 	ABI class: X.Org ANSI C Emulation, version 0.4
+[ 35447.148] (II) LoadModule: "xrdpdev"
+[ 35447.148] (II) Loading /usr/lib/xorg/modules/drivers/xrdpdev_drv.so
+[ 35447.149] (II) Module XRDPDEV: vendor="X.Org Foundation"
+[ 35447.149] 	compiled for 1.20.6, module version = 0.2.12
+[ 35447.149] 	ABI class: X.Org Video Driver, version 24.0
+[ 35447.149] xrdpdevSetup:
+[ 35447.150] (II) LoadModule: "xrdpmouse"
+[ 35447.150] (II) Loading /usr/lib/xorg/modules/input/xrdpmouse_drv.so
+[ 35447.151] (II) Module XRDPMOUSE: vendor="X.Org Foundation"
+[ 35447.151] 	compiled for 1.20.6, module version = 0.2.12
+[ 35447.152] 	Module class: X.Org XInput Driver
+[ 35447.152] 	ABI class: X.Org XInput driver, version 24.1
+[ 35447.152] rdpmousePlug:
+[ 35447.152] (II) LoadModule: "xrdpkeyb"
+[ 35447.152] (II) Loading /usr/lib/xorg/modules/input/xrdpkeyb_drv.so
+[ 35447.153] (II) Module XRDPKEYB: vendor="X.Org Foundation"
+[ 35447.153] 	compiled for 1.20.6, module version = 0.2.12
+[ 35447.153] 	Module class: X.Org XInput Driver
+[ 35447.153] 	ABI class: X.Org XInput driver, version 24.1
+[ 35447.153] rdpkeybPlug:
+[ 35447.154] rdpIdentify:
+[ 35447.154] (II) XRDPDEV: driver for xrdp: XRDPDEV
+[ 35447.154] rdpDriverFunc: op 10
+[ 35447.154] (WW) Falling back to old probe method for XRDPDEV
+[ 35447.155] rdpProbe:
+[ 35447.155] (II) Loading sub module "fb"
+[ 35447.155] (II) LoadModule: "fb"
+[ 35447.155] (II) Loading /usr/lib/xorg/modules/libfb.so
+[ 35447.156] (II) Module fb: vendor="X.Org Foundation"
+[ 35447.156] 	compiled for 1.20.9, module version = 1.0.0
+[ 35447.156] 	ABI class: X.Org ANSI C Emulation, version 0.4
+[ 35447.156] rdpProbe: found DRMDevice xorg.conf value [/dev/dri/renderD128]
+[ 35447.156] rdpProbe: found DRI3 xorg.conf value [1]
+[ 35447.156] (II) XRDPDEV(0): using default device
+[ 35447.156] (WW) VGA arbiter: cannot open kernel arbiter, no multi-card support
+[ 35447.157] rdpPreInit:
+[ 35447.157] rdpPreInit: /dev/dri/renderD128 open failed
+[ 35447.157] (**) XRDPDEV(0): Depth 24, (--) framebuffer bpp 32
+[ 35447.158] (==) XRDPDEV(0): RGB weight 888
+[ 35447.158] (==) XRDPDEV(0): Using gamma correction (1.0, 1.0, 1.0)
+[ 35447.158] (==) XRDPDEV(0): Default visual is TrueColor
+[ 35447.158] (==) XRDPDEV(0): DPI set to (96, 96)
+[ 35447.158] (II) XRDPDEV(0): 	mode "640x480" ok
+[ 35447.158] (II) XRDPDEV(0): 	mode "800x600" ok
+[ 35447.158] (II) XRDPDEV(0): Virtual size is 800x600 (pitch 800)
+[ 35447.159] (**) XRDPDEV(0):  Default mode "800x600": 36.0 MHz (scaled from 0.0 MHz), 35.2 kHz, 56.2 Hz
+[ 35447.159] (II) XRDPDEV(0): Modeline "800x600"x0.0   36.00  800 824 896 1024  600 601 603 625 +hsync +vsync (35.2 kHz d)
+[ 35447.159] rdpScreenInit: virtualX 800 virtualY 600 rgbBits 8 depth 24
+[ 35447.160] rdpScreenInit: pfbMemory bytes 1920000
+[ 35447.161] rdpScreenInit: pfbMemory 0x7fc54efb4010
+[ 35447.162] rdpSimdInit: assigning yuv functions
+[ 35447.162] rdpSimdInit: cpuid ax 1 cx 0 return ax 0x000406e3 bx 0x03100800 cx 0x7ffafbff dx 0xbfebfbff
+[ 35447.163] rdpSimdInit: sse2 amd64 yuv functions assigned
+[ 35447.164] (==) XRDPDEV(0): Backing store enabled
+[ 35447.164] rdpClientConInit: disconnect idle session after [0] sec
+[ 35447.165] rdpClientConInit: kill disconnected [0] timeout [0] sec
+[ 35447.165] rdpXvInit: depth 24
+[ 35447.165] rdpScreenInit: out
+[ 35447.166] (II) Initializing extension Generic Event Extension
+[ 35447.166] (II) Initializing extension SHAPE
+[ 35447.167] (II) Initializing extension MIT-SHM
+[ 35447.167] (II) Initializing extension XInputExtension
+[ 35447.168] (II) Initializing extension XTEST
+[ 35447.168] (II) Initializing extension BIG-REQUESTS
+[ 35447.169] (II) Initializing extension SYNC
+[ 35447.169] (II) Initializing extension XKEYBOARD
+[ 35447.171] (II) Initializing extension XC-MISC
+[ 35447.171] (II) Initializing extension SECURITY
+[ 35447.172] (II) Initializing extension XFIXES
+[ 35447.172] (II) Initializing extension RENDER
+[ 35447.172] (II) Initializing extension RANDR
+[ 35447.173] (II) Initializing extension COMPOSITE
+[ 35447.173] (II) Initializing extension DAMAGE
+[ 35447.174] (II) Initializing extension MIT-SCREEN-SAVER
+[ 35447.174] (II) Initializing extension DOUBLE-BUFFER
+[ 35447.174] (II) Initializing extension RECORD
+[ 35447.175] (II) Initializing extension DPMS
+[ 35447.175] (II) Initializing extension Present
+[ 35447.175] (II) Initializing extension DRI3
+[ 35447.175] (II) Initializing extension X-Resource
+[ 35447.176] (II) Initializing extension XVideo
+[ 35447.176] (II) Initializing extension XVideo-MotionCompensation
+[ 35447.176] (II) Initializing extension SELinux
+[ 35447.176] (II) SELinux: Disabled on system
+[ 35447.176] (II) Initializing extension GLX
+[ 35447.177] (II) AIGLX: Screen 0 is not DRI2 capable
+[ 35447.393] (II) IGLX: Loaded and initialized swrast
+[ 35447.394] (II) GLX: Initialized DRISWRAST GL provider for screen 0
+[ 35447.394] (II) Initializing extension XFree86-VidModeExtension
+[ 35447.395] (II) Initializing extension XFree86-DGA
+[ 35447.395] (II) Initializing extension XFree86-DRI
+[ 35447.395] (II) Initializing extension DRI2
+[ 35447.398] rdpCreateScreenResources:
+[ 35447.456] (II) Using input driver 'XRDPMOUSE' for 'xrdpMouse'
+[ 35447.456] (**) Option "CorePointer"
+[ 35447.457] (**) xrdpMouse: always reports core events
+[ 35447.457] rdpmousePreInit: drv 0x55911a57ea30 info 0x55911a706b10, flags 0x0
+[ 35447.457] (II) XINPUT: Adding extended input device "xrdpMouse" (type: Mouse, id 6)
+[ 35447.458] rdpmouseControl: what 0
+[ 35447.458] rdpmouseDeviceInit:
+[ 35447.459] rdpmouseCtrl:
+[ 35447.459] rdpRegisterInputCallback: type 1 proc 0x7fc55051a430
+[ 35447.460] (**) xrdpMouse: (accel) keeping acceleration scheme 1
+[ 35447.460] (**) xrdpMouse: (accel) acceleration profile 0
+[ 35447.460] (**) xrdpMouse: (accel) acceleration factor: 2.000
+[ 35447.460] (**) xrdpMouse: (accel) acceleration threshold: 4
+[ 35447.461] rdpmouseControl: what 1
+[ 35447.467] rdpmouseDeviceOn:
+[ 35447.468] (II) Using input driver 'XRDPKEYB' for 'xrdpKeyboard'
+[ 35447.469] (**) Option "CoreKeyboard"
+[ 35447.470] (**) xrdpKeyboard: always reports core events
+[ 35447.470] rdpkeybPreInit: drv 0x55911a57e9e0 info 0x55911a88f840, flags 0x0
+[ 35447.470] (II) XINPUT: Adding extended input device "xrdpKeyboard" (type: Keyboard, id 7)
+[ 35447.470] rdpkeybControl: what 0
+[ 35447.471] rdpkeybDeviceInit:
+[ 35447.507] rdpkeybChangeKeyboardControl:
+[ 35447.514] rdpkeybChangeKeyboardControl: autoRepeat on
+[ 35447.514] rdpRegisterInputCallback: type 0 proc 0x7fc54f6a68e0
+[ 35447.514] rdpkeybControl: what 1
+[ 35447.514] rdpkeybDeviceOn:
+[ 35447.534] (II) config/udev: Adding drm device (/dev/dri/card0)
+[ 35447.534] (II) xfree86: Adding drm device (/dev/dri/card0)
+[ 35447.548] (EE) dbus-core: error connecting to system bus: org.freedesktop.DBus.Error.FileNotFound (Failed to connect to socket /var/run/dbus/system_bus_socket: No such file or directory)
+[ 35447.549] rdpDeferredRandR:
+[ 35447.549] rdpResizeSession: width 1024 height 768
+[ 35447.549]   calling RRScreenSizeSet
+[ 35447.549] rdpRRScreenSetSize: width 1024 height 768 mmWidth 271 mmHeight 203
+[ 35447.550] rdpRRGetInfo:
+[ 35447.550]   screen resized to 1024x768
+[ 35447.552]   RRScreenSizeSet ok 1
+[ 35447.552] rdpResizeSession: width 1920 height 995
+[ 35447.553]   calling RRScreenSizeSet
+[ 35447.553] rdpRRScreenSetSize: width 1920 height 995 mmWidth 508 mmHeight 263
+[ 35447.553] rdpRRGetInfo:
+[ 35447.554]   screen resized to 1920x995
+[ 35447.558]   RRScreenSizeSet ok 1
+[ 35447.559] rdpClientConGotConnection:
+[ 35447.559] rdpClientConGotConnection: g_sck_accept ok new_sck 7
+[ 35447.560] rdpClientConGetConnection: idle_disconnect_timeout set to non-positive value, idle timer turned off
+[ 35447.560] rdpAddClientConToDev: adding first clientCon 0x55911a8ddd10
+[ 35447.560] rdpClientConProcessMsgVersion: version 0 0 0 1
+[ 35447.561] rdpClientConProcessScreenSizeMsg: set width 1920 height 995 bpp 16
+[ 35447.561] rdpClientConProcessScreenSizeMsg: shmemid 0 shmemptr 0x7fc524d0c000
+[ 35447.561] rdpClientConProcessMsgClientInput: invalidate x 0 y 0 cx 1920 cy 995
+[ 35447.562] rdpClientConProcessMsgClientInfo:
+[ 35447.562]   got client info bytes 5752
+[ 35447.563]   jpeg support 0
+[ 35447.564]   offscreen support 0
+[ 35447.564]   offscreen size 0
+[ 35447.564]   offscreen entries 0
+[ 35447.564]   client supports glyph cache but server disabled
+[ 35447.565]   client can not do offscreen to offscreen blits
+[ 35447.565]   client can do new(color) cursor
+[ 35447.565]   client can not do multimon
+[ 35447.565] rdpRRSetRdpOutputs: numCrtcs 0 numOutputs 0 monitorCount 0
+[ 35447.566] rdpRRSetRdpOutputs: add output 0 left 0 top 0 width 1920 height 995
+[ 35447.566] rdpLoadLayout: keylayout 0x00000409 variant  display 10
+[ 35447.566] rdpkeybChangeKeyboardControl:
+[ 35447.567] rdpkeybChangeKeyboardControl: autoRepeat on
+[ 35447.568] rdpkeybChangeKeyboardControl:
+[ 35447.568] rdpkeybChangeKeyboardControl: autoRepeat on
+[ 35447.570] (EE) Failed to open authorization file ".Xauthority": No such file or directory
+[ 35447.614] rdpInDeferredRepeatCallback:
+[ 35447.618] rdpkeybChangeKeyboardControl:
+[ 35447.619] rdpkeybChangeKeyboardControl: autoRepeat off
+[ 35447.667] rdpInDeferredRepeatCallback:
+[ 35447.667] rdpkeybChangeKeyboardControl:
+[ 35447.667] rdpkeybChangeKeyboardControl: autoRepeat off
+[ 35447.669] rdpInDeferredRepeatCallback:
+[ 35447.669] rdpkeybChangeKeyboardControl:
+[ 35447.669] rdpkeybChangeKeyboardControl: autoRepeat off
+[ 35457.548] (EE) dbus-core: error connecting to system bus: org.freedesktop.DBus.Error.FileNotFound (Failed to connect to socket /var/run/dbus/system_bus_socket: No such file or directory)
+[ 35467.548] (EE) dbus-core: error connecting to system bus: org.freedesktop.DBus.Error.FileNotFound (Failed to connect to socket /var/run/dbus/system_bus_socket: No such file or directory)
+[ 35477.085] rdpkeybBell:
+[ 35477.085] rdpkeybBell:
+[ 35477.549] (EE) dbus-core: error connecting to system bus: org.freedesktop.DBus.Error.FileNotFound (Failed to connect to socket /var/run/dbus/system_bus_socket: No such file or directory)
+[ 35483.990] rdpkeybBell:
+[ 35483.991] rdpkeybBell:
+[ 35483.992] rdpkeybBell:
+[ 35483.992] rdpkeybBell:
+[ 35487.550] (EE) dbus-core: error connecting to system bus: org.freedesktop.DBus.Error.FileNotFound (Failed to connect to socket /var/run/dbus/system_bus_socket: No such file or directory)
+[ 35497.551] (EE) dbus-core: error connecting to system bus: org.freedesktop.DBus.Error.FileNotFound (Failed to connect to socket /var/run/dbus/system_bus_socket: No such file or directory)
+[ 35507.552] (EE) dbus-core: error connecting to system bus: org.freedesktop.DBus.Error.FileNotFound (Failed to connect to socket /var/run/dbus/system_bus_socket: No such file or directory)
+[ 35517.553] (EE) dbus-core: error connecting to system bus: org.freedesktop.DBus.Error.FileNotFound (Failed to connect to socket /var/run/dbus/system_bus_socket: No such file or directory)
+[ 35527.553] (EE) dbus-core: error connecting to system bus: org.freedesktop.DBus.Error.FileNotFound (Failed to connect to socket /var/run/dbus/system_bus_socket: No such file or directory)
+[ 35530.911] rdpkeybBell:
+[ 35530.912] rdpkeybBell:
+[ 35530.914] rdpkeybBell:
+[ 35530.915] rdpkeybBell:
+[ 35531.477] rdpkeybBell:
+[ 35531.478] rdpkeybBell:
+[ 35537.554] (EE) dbus-core: error connecting to system bus: org.freedesktop.DBus.Error.FileNotFound (Failed to connect to socket /var/run/dbus/system_bus_socket: No such file or directory)
+[ 35547.555] (EE) dbus-core: error connecting to system bus: org.freedesktop.DBus.Error.FileNotFound (Failed to connect to socket /var/run/dbus/system_bus_socket: No such file or directory)
+[ 35557.557] (EE) dbus-core: error connecting to system bus: org.freedesktop.DBus.Error.FileNotFound (Failed to connect to socket /var/run/dbus/system_bus_socket: No such file or directory)
+[ 35567.557] (EE) dbus-core: error connecting to system bus: org.freedesktop.DBus.Error.FileNotFound (Failed to connect to socket /var/run/dbus/system_bus_socket: No such file or directory)
+[ 35577.558] (EE) dbus-core: error connecting to system bus: org.freedesktop.DBus.Error.FileNotFound (Failed to connect to socket /var/run/dbus/system_bus_socket: No such file or directory)
+[ 35587.559] (EE) dbus-core: error connecting to system bus: org.freedesktop.DBus.Error.FileNotFound (Failed to connect to socket /var/run/dbus/system_bus_socket: No such file or directory)
+[ 35597.561] (EE) dbus-core: error connecting to system bus: org.freedesktop.DBus.Error.FileNotFound (Failed to connect to socket /var/run/dbus/system_bus_socket: No such file or directory)
+[ 35607.562] (EE) dbus-core: error connecting to system bus: org.freedesktop.DBus.Error.FileNotFound (Failed to connect to socket /var/run/dbus/system_bus_socket: No such file or directory)
+[ 35617.563] (EE) dbus-core: error connecting to system bus: org.freedesktop.DBus.Error.FileNotFound (Failed to connect to socket /var/run/dbus/system_bus_socket: No such file or directory)
+[ 35627.572] (EE) dbus-core: error connecting to system bus: org.freedesktop.DBus.Error.FileNotFound (Failed to connect to socket /var/run/dbus/system_bus_socket: No such file or directory)
+[ 35637.583] (EE) dbus-core: error connecting to system bus: org.freedesktop.DBus.Error.FileNotFound (Failed to connect to socket /var/run/dbus/system_bus_socket: No such file or directory)
+[ 35647.591] (EE) dbus-core: error connecting to system bus: org.freedesktop.DBus.Error.FileNotFound (Failed to connect to socket /var/run/dbus/system_bus_socket: No such file or directory)
+[ 35657.599] (EE) dbus-core: error connecting to system bus: org.freedesktop.DBus.Error.FileNotFound (Failed to connect to socket /var/run/dbus/system_bus_socket: No such file or directory)
+[ 35667.607] (EE) dbus-core: error connecting to system bus: org.freedesktop.DBus.Error.FileNotFound (Failed to connect to socket /var/run/dbus/system_bus_socket: No such file or directory)
+[ 35677.615] (EE) dbus-core: error connecting to system bus: org.freedesktop.DBus.Error.FileNotFound (Failed to connect to socket /var/run/dbus/system_bus_socket: No such file or directory)
+[ 35687.623] (EE) dbus-core: error connecting to system bus: org.freedesktop.DBus.Error.FileNotFound (Failed to connect to socket /var/run/dbus/system_bus_socket: No such file or directory)
+[ 35697.633] (EE) dbus-core: error connecting to system bus: org.freedesktop.DBus.Error.FileNotFound (Failed to connect to socket /var/run/dbus/system_bus_socket: No such file or directory)
+[ 35707.643] (EE) dbus-core: error connecting to system bus: org.freedesktop.DBus.Error.FileNotFound (Failed to connect to socket /var/run/dbus/system_bus_socket: No such file or directory)
+[ 35717.647] (EE) dbus-core: error connecting to system bus: org.freedesktop.DBus.Error.FileNotFound (Failed to connect to socket /var/run/dbus/system_bus_socket: No such file or directory)
+[ 35727.655] (EE) dbus-core: error connecting to system bus: org.freedesktop.DBus.Error.FileNotFound (Failed to connect to socket /var/run/dbus/system_bus_socket: No such file or directory)
+[ 35737.663] (EE) dbus-core: error connecting to system bus: org.freedesktop.DBus.Error.FileNotFound (Failed to connect to socket /var/run/dbus/system_bus_socket: No such file or directory)
+[ 35747.671] (EE) dbus-core: error connecting to system bus: org.freedesktop.DBus.Error.FileNotFound (Failed to connect to socket /var/run/dbus/system_bus_socket: No such file or directory)
+[ 35757.679] (EE) dbus-core: error connecting to system bus: org.freedesktop.DBus.Error.FileNotFound (Failed to connect to socket /var/run/dbus/system_bus_socket: No such file or directory)
+[ 35767.689] (EE) dbus-core: error connecting to system bus: org.freedesktop.DBus.Error.FileNotFound (Failed to connect to socket /var/run/dbus/system_bus_socket: No such file or directory)
+[ 35777.699] (EE) dbus-core: error connecting to system bus: org.freedesktop.DBus.Error.FileNotFound (Failed to connect to socket /var/run/dbus/system_bus_socket: No such file or directory)
+[ 35787.707] (EE) dbus-core: error connecting to system bus: org.freedesktop.DBus.Error.FileNotFound (Failed to connect to socket /var/run/dbus/system_bus_socket: No such file or directory)
+[ 35797.715] (EE) dbus-core: error connecting to system bus: org.freedesktop.DBus.Error.FileNotFound (Failed to connect to socket /var/run/dbus/system_bus_socket: No such file or directory)
+[ 35807.723] (EE) dbus-core: error connecting to system bus: org.freedesktop.DBus.Error.FileNotFound (Failed to connect to socket /var/run/dbus/system_bus_socket: No such file or directory)
+[ 35817.734] (EE) dbus-core: error connecting to system bus: org.freedesktop.DBus.Error.FileNotFound (Failed to connect to socket /var/run/dbus/system_bus_socket: No such file or directory)
+[ 35827.744] (EE) dbus-core: error connecting to system bus: org.freedesktop.DBus.Error.FileNotFound (Failed to connect to socket /var/run/dbus/system_bus_socket: No such file or directory)
+[ 35837.755] (EE) dbus-core: error connecting to system bus: org.freedesktop.DBus.Error.FileNotFound (Failed to connect to socket /var/run/dbus/system_bus_socket: No such file or directory)
+[ 35847.763] (EE) dbus-core: error connecting to system bus: org.freedesktop.DBus.Error.FileNotFound (Failed to connect to socket /var/run/dbus/system_bus_socket: No such file or directory)
+[ 35857.771] (EE) dbus-core: error connecting to system bus: org.freedesktop.DBus.Error.FileNotFound (Failed to connect to socket /var/run/dbus/system_bus_socket: No such file or directory)
+[ 35867.781] (EE) dbus-core: error connecting to system bus: org.freedesktop.DBus.Error.FileNotFound (Failed to connect to socket /var/run/dbus/system_bus_socket: No such file or directory)
+[ 35877.791] (EE) dbus-core: error connecting to system bus: org.freedesktop.DBus.Error.FileNotFound (Failed to connect to socket /var/run/dbus/system_bus_socket: No such file or directory)
+[ 35887.799] (EE) dbus-core: error connecting to system bus: org.freedesktop.DBus.Error.FileNotFound (Failed to connect to socket /var/run/dbus/system_bus_socket: No such file or directory)
+[ 35897.807] (EE) dbus-core: error connecting to system bus: org.freedesktop.DBus.Error.FileNotFound (Failed to connect to socket /var/run/dbus/system_bus_socket: No such file or directory)
+[ 35907.815] (EE) dbus-core: error connecting to system bus: org.freedesktop.DBus.Error.FileNotFound (Failed to connect to socket /var/run/dbus/system_bus_socket: No such file or directory)
+[ 35917.823] (EE) dbus-core: error connecting to system bus: org.freedesktop.DBus.Error.FileNotFound (Failed to connect to socket /var/run/dbus/system_bus_socket: No such file or directory)
+[ 35927.832] (EE) dbus-core: error connecting to system bus: org.freedesktop.DBus.Error.FileNotFound (Failed to connect to socket /var/run/dbus/system_bus_socket: No such file or directory)
+[ 35937.842] (EE) dbus-core: error connecting to system bus: org.freedesktop.DBus.Error.FileNotFound (Failed to connect to socket /var/run/dbus/system_bus_socket: No such file or directory)
+[ 35947.851] (EE) dbus-core: error connecting to system bus: org.freedesktop.DBus.Error.FileNotFound (Failed to connect to socket /var/run/dbus/system_bus_socket: No such file or directory)
+[ 35957.859] (EE) dbus-core: error connecting to system bus: org.freedesktop.DBus.Error.FileNotFound (Failed to connect to socket /var/run/dbus/system_bus_socket: No such file or directory)
+[ 35967.867] (EE) dbus-core: error connecting to system bus: org.freedesktop.DBus.Error.FileNotFound (Failed to connect to socket /var/run/dbus/system_bus_socket: No such file or directory)
+[ 35977.875] (EE) dbus-core: error connecting to system bus: org.freedesktop.DBus.Error.FileNotFound (Failed to connect to socket /var/run/dbus/system_bus_socket: No such file or directory)
+[ 35987.883] (EE) dbus-core: error connecting to system bus: org.freedesktop.DBus.Error.FileNotFound (Failed to connect to socket /var/run/dbus/system_bus_socket: No such file or directory)
+[ 35997.891] (EE) dbus-core: error connecting to system bus: org.freedesktop.DBus.Error.FileNotFound (Failed to connect to socket /var/run/dbus/system_bus_socket: No such file or directory)
+[ 36007.899] (EE) dbus-core: error connecting to system bus: org.freedesktop.DBus.Error.FileNotFound (Failed to connect to socket /var/run/dbus/system_bus_socket: No such file or directory)
+[ 36017.909] (EE) dbus-core: error connecting to system bus: org.freedesktop.DBus.Error.FileNotFound (Failed to connect to socket /var/run/dbus/system_bus_socket: No such file or directory)
+[ 36018.080] rdpClientConGotConnection:
+[ 36018.082] rdpClientConGotConnection: g_sck_accept ok new_sck 21
+[ 36018.083] rdpClientConGotConnection: marking only clientCon 0x55911a8ddd10 for disconnect
+[ 36018.084] rdpClientConGetConnection: idle_disconnect_timeout set to non-positive value, idle timer turned off
+[ 36018.085] rdpAddClientConToDev: adding clientCon 0x55911aaf8230
+[ 36018.086] rdpClientConDisconnect:
+[ 36018.087] rdpRemoveClientConFromDev: removing clientCon 0x55911a8ddd10
+[ 36018.088] rdpClientConProcessMsgVersion: version 0 0 0 1
+[ 36018.098] rdpClientConProcessScreenSizeMsg: set width 1920 height 995 bpp 16
+[ 36018.101] rdpClientConProcessScreenSizeMsg: shmemid 8 shmemptr 0x7fc524d0c000
+[ 36018.111] rdpClientConProcessMsgClientInput: invalidate x 0 y 0 cx 1920 cy 995
+[ 36018.189] rdpClientConProcessMsgClientInfo:
+[ 36018.190]   got client info bytes 5752
+[ 36018.192]   jpeg support 0
+[ 36018.194]   offscreen support 0
+[ 36018.195]   offscreen size 0
+[ 36018.200]   offscreen entries 0
+[ 36018.202]   client supports glyph cache but server disabled
+[ 36018.202]   client can not do offscreen to offscreen blits
+[ 36018.204]   client can do new(color) cursor
+[ 36018.205]   client can not do multimon
+[ 36018.206] rdpRRSetRdpOutputs: numCrtcs 1 numOutputs 1 monitorCount 0
+[ 36018.207] rdpRRSetRdpOutputs: update output 0 left 0 top 0 width 1920 height 995
+[ 36018.207] rdpRRUpdateOutput:
+[ 36018.208] rdpLoadLayout: keylayout 0x00000409 variant  display 10
+[ 36018.209] rdpkeybChangeKeyboardControl:
+[ 36018.210] rdpkeybChangeKeyboardControl: autoRepeat on
+[ 36018.214] rdpkeybChangeKeyboardControl:
+[ 36018.216] rdpkeybChangeKeyboardControl: autoRepeat on
+[ 36018.311] rdpInDeferredRepeatCallback:
+[ 36018.311] rdpkeybChangeKeyboardControl:
+[ 36018.312] rdpkeybChangeKeyboardControl: autoRepeat off
+[ 36018.316] rdpInDeferredRepeatCallback:
+[ 36018.317] rdpkeybChangeKeyboardControl:
+[ 36018.317] rdpkeybChangeKeyboardControl: autoRepeat off
+[ 36027.909] (EE) dbus-core: error connecting to system bus: org.freedesktop.DBus.Error.FileNotFound (Failed to connect to socket /var/run/dbus/system_bus_socket: No such file or directory)
+[ 36037.910] (EE) dbus-core: error connecting to system bus: org.freedesktop.DBus.Error.FileNotFound (Failed to connect to socket /var/run/dbus/system_bus_socket: No such file or directory)
+[ 36047.910] (EE) dbus-core: error connecting to system bus: org.freedesktop.DBus.Error.FileNotFound (Failed to connect to socket /var/run/dbus/system_bus_socket: No such file or directory)
+[ 36050.597] rdpClientConGotConnection:
+[ 36050.598] rdpClientConGotConnection: g_sck_accept ok new_sck 7
+[ 36050.598] rdpClientConGotConnection: marking only clientCon 0x55911aaf8230 for disconnect
+[ 36050.599] rdpClientConGetConnection: idle_disconnect_timeout set to non-positive value, idle timer turned off
+[ 36050.599] rdpAddClientConToDev: adding clientCon 0x55911aa653f0
+[ 36050.600] rdpClientConDisconnect:
+[ 36050.600] rdpRemoveClientConFromDev: removing clientCon 0x55911aaf8230
+[ 36050.601] rdpClientConProcessMsgVersion: version 0 0 0 1
+[ 36050.602] rdpClientConProcessScreenSizeMsg: set width 1920 height 995 bpp 16
+[ 36050.603] rdpClientConProcessScreenSizeMsg: shmemid 9 shmemptr 0x7fc524d0c000
+[ 36050.603] rdpClientConProcessMsgClientInput: invalidate x 0 y 0 cx 1920 cy 995
+[ 36050.706] rdpClientConProcessMsgClientInfo:
+[ 36050.707]   got client info bytes 5752
+[ 36050.708]   jpeg support 0
+[ 36050.716]   offscreen support 0
+[ 36050.718]   offscreen size 0
+[ 36050.719]   offscreen entries 0
+[ 36050.720]   client supports glyph cache but server disabled
+[ 36050.722]   client can not do offscreen to offscreen blits
+[ 36050.723]   client can do new(color) cursor
+[ 36050.724]   client can not do multimon
+[ 36050.725] rdpRRSetRdpOutputs: numCrtcs 1 numOutputs 1 monitorCount 0
+[ 36050.726] rdpRRSetRdpOutputs: update output 0 left 0 top 0 width 1920 height 995
+[ 36050.728] rdpRRUpdateOutput:
+[ 36050.729] rdpLoadLayout: keylayout 0x00000409 variant  display 10
+[ 36050.731] rdpkeybChangeKeyboardControl:
+[ 36050.732] rdpkeybChangeKeyboardControl: autoRepeat on
+[ 36050.737] rdpkeybChangeKeyboardControl:
+[ 36050.739] rdpkeybChangeKeyboardControl: autoRepeat on
+[ 36050.833] rdpInDeferredRepeatCallback:
+[ 36050.833] rdpkeybChangeKeyboardControl:
+[ 36050.834] rdpkeybChangeKeyboardControl: autoRepeat off
+[ 36050.843] rdpInDeferredRepeatCallback:
+[ 36050.843] rdpkeybChangeKeyboardControl:
+[ 36050.844] rdpkeybChangeKeyboardControl: autoRepeat off
+[ 36057.911] (EE) dbus-core: error connecting to system bus: org.freedesktop.DBus.Error.FileNotFound (Failed to connect to socket /var/run/dbus/system_bus_socket: No such file or directory)
+[ 36064.685] rdpClientConGotConnection:
+[ 36064.691] rdpClientConGotConnection: g_sck_accept ok new_sck 20
+[ 36064.692] rdpClientConGotConnection: marking only clientCon 0x55911aa653f0 for disconnect
+[ 36064.693] rdpClientConGetConnection: idle_disconnect_timeout set to non-positive value, idle timer turned off
+[ 36064.694] rdpAddClientConToDev: adding clientCon 0x55911aa91a70
+[ 36064.695] rdpClientConDisconnect:
+[ 36064.696] rdpRemoveClientConFromDev: removing clientCon 0x55911aa653f0
+[ 36064.703] rdpClientConProcessMsgVersion: version 0 0 0 1
+[ 36064.708] rdpClientConProcessScreenSizeMsg: set width 1920 height 722 bpp 16
+[ 36064.709] rdpClientConProcessScreenSizeMsg: shmemid 10 shmemptr 0x7fc544070000
+[ 36064.709] rdpRRScreenSetSize: width 1920 height 722 mmWidth 508 mmHeight 191
+[ 36064.712] rdpRRGetInfo:
+[ 36064.713]   screen resized to 1920x722
+[ 36064.718] rdpClientConProcessScreenSizeMsg: RRScreenSizeSet ok=[1]
+[ 36064.719] rdpClientConProcessMsgClientInput: invalidate x 0 y 0 cx 1920 cy 722
+[ 36064.796] rdpClientConProcessMsgClientInfo:
+[ 36064.796]   got client info bytes 5752
+[ 36064.797]   jpeg support 0
+[ 36064.797]   offscreen support 0
+[ 36064.797]   offscreen size 0
+[ 36064.798]   offscreen entries 0
+[ 36064.798]   client supports glyph cache but server disabled
+[ 36064.799]   client can not do offscreen to offscreen blits
+[ 36064.800]   client can do new(color) cursor
+[ 36064.800]   client can not do multimon
+[ 36064.800] rdpRRSetRdpOutputs: numCrtcs 1 numOutputs 1 monitorCount 0
+[ 36064.801] rdpRRSetRdpOutputs: update output 0 left 0 top 0 width 1920 height 722
+[ 36064.801] rdpRRUpdateOutput:
+[ 36064.802] rdpLoadLayout: keylayout 0x00000409 variant  display 10
+[ 36064.802] rdpkeybChangeKeyboardControl:
+[ 36064.802] rdpkeybChangeKeyboardControl: autoRepeat on
+[ 36064.803] rdpkeybChangeKeyboardControl:
+[ 36064.804] rdpkeybChangeKeyboardControl: autoRepeat on
+[ 36064.903] rdpInDeferredRepeatCallback:
+[ 36064.903] rdpkeybChangeKeyboardControl:
+[ 36064.904] rdpkeybChangeKeyboardControl: autoRepeat off
+[ 36064.904] rdpInDeferredRepeatCallback:
+[ 36064.904] rdpkeybChangeKeyboardControl:
+[ 36064.905] rdpkeybChangeKeyboardControl: autoRepeat off
+[ 36066.541] rdpClientConGotConnection:
+[ 36066.542] rdpClientConGotConnection: g_sck_accept ok new_sck 7
+[ 36066.544] rdpClientConGotConnection: marking only clientCon 0x55911aa91a70 for disconnect
+[ 36066.545] rdpClientConGetConnection: idle_disconnect_timeout set to non-positive value, idle timer turned off
+[ 36066.546] rdpAddClientConToDev: adding clientCon 0x55911aa653f0
+[ 36066.546] rdpClientConDisconnect:
+[ 36066.555] rdpRemoveClientConFromDev: removing clientCon 0x55911aa91a70
+[ 36066.557] rdpClientConProcessMsgVersion: version 0 0 0 1
+[ 36066.562] rdpClientConProcessScreenSizeMsg: set width 1920 height 995 bpp 16
+[ 36066.568] rdpClientConProcessScreenSizeMsg: shmemid 11 shmemptr 0x7fc525456000
+[ 36066.570] rdpRRScreenSetSize: width 1920 height 995 mmWidth 508 mmHeight 263
+[ 36066.573] rdpRRGetInfo:
+[ 36066.574]   screen resized to 1920x995
+[ 36066.581] rdpClientConProcessScreenSizeMsg: RRScreenSizeSet ok=[1]
+[ 36066.583] rdpClientConProcessMsgClientInput: invalidate x 0 y 0 cx 1920 cy 995
+[ 36066.660] rdpClientConProcessMsgClientInfo:
+[ 36066.661]   got client info bytes 5752
+[ 36066.663]   jpeg support 0
+[ 36066.664]   offscreen support 0
+[ 36066.665]   offscreen size 0
+[ 36066.667]   offscreen entries 0
+[ 36066.667]   client supports glyph cache but server disabled
+[ 36066.668]   client can not do offscreen to offscreen blits
+[ 36066.669]   client can do new(color) cursor
+[ 36066.670]   client can not do multimon
+[ 36066.671] rdpRRSetRdpOutputs: numCrtcs 1 numOutputs 1 monitorCount 0
+[ 36066.673] rdpRRSetRdpOutputs: update output 0 left 0 top 0 width 1920 height 995
+[ 36066.674] rdpRRUpdateOutput:
+[ 36066.676] rdpLoadLayout: keylayout 0x00000409 variant  display 10
+[ 36066.677] rdpkeybChangeKeyboardControl:
+[ 36066.678] rdpkeybChangeKeyboardControl: autoRepeat on
+[ 36066.681] rdpkeybChangeKeyboardControl:
+[ 36066.682] rdpkeybChangeKeyboardControl: autoRepeat on
+[ 36066.779] rdpInDeferredRepeatCallback:
+[ 36066.780] rdpkeybChangeKeyboardControl:
+[ 36066.781] rdpkeybChangeKeyboardControl: autoRepeat off
+[ 36066.784] rdpInDeferredRepeatCallback:
+[ 36066.785] rdpkeybChangeKeyboardControl:
+[ 36066.786] rdpkeybChangeKeyboardControl: autoRepeat off
+[ 36067.912] (EE) dbus-core: error connecting to system bus: org.freedesktop.DBus.Error.FileNotFound (Failed to connect to socket /var/run/dbus/system_bus_socket: No such file or directory)
+[ 36074.856] rdpClientConRecv: g_sck_recv failed(returned 0)
+[ 36074.857] rdpClientConRecvMsg: error
+[ 36074.858] rdpClientConCheck: rdpClientConGotData failed
+[ 36074.864] rdpClientConDisconnect:
+[ 36074.865] rdpRemoveClientConFromDev: removing clientCon 0x55911aa653f0
+[ 36077.915] (EE) dbus-core: error connecting to system bus: org.freedesktop.DBus.Error.FileNotFound (Failed to connect to socket /var/run/dbus/system_bus_socket: No such file or directory)
+[ 36081.428] rdpClientConGotConnection:
+[ 36081.428] rdpClientConGotConnection: g_sck_accept ok new_sck 7
+[ 36081.429] rdpClientConGetConnection: idle_disconnect_timeout set to non-positive value, idle timer turned off
+[ 36081.429] rdpAddClientConToDev: adding first clientCon 0x55911aa653f0
+[ 36081.430] rdpClientConProcessMsgVersion: version 0 0 0 1
+[ 36081.432] rdpClientConProcessScreenSizeMsg: set width 1920 height 966 bpp 16
+[ 36081.433] rdpClientConProcessScreenSizeMsg: shmemid 12 shmemptr 0x7fc525471000
+[ 36081.433] rdpRRScreenSetSize: width 1920 height 966 mmWidth 508 mmHeight 256
+[ 36081.434] rdpRRGetInfo:
+[ 36081.434]   screen resized to 1920x966
+[ 36081.436] rdpClientConProcessScreenSizeMsg: RRScreenSizeSet ok=[1]
+[ 36081.436] rdpClientConProcessMsgClientInput: invalidate x 0 y 0 cx 1920 cy 966
+[ 36081.437] rdpClientConProcessMsgClientInfo:
+[ 36081.437]   got client info bytes 5752
+[ 36081.438]   jpeg support 0
+[ 36081.439]   offscreen support 0
+[ 36081.439]   offscreen size 0
+[ 36081.440]   offscreen entries 0
+[ 36081.440]   client supports glyph cache but server disabled
+[ 36081.442]   client can not do offscreen to offscreen blits
+[ 36081.442]   client can do new(color) cursor
+[ 36081.442]   client can not do multimon
+[ 36081.443] rdpRRSetRdpOutputs: numCrtcs 1 numOutputs 1 monitorCount 0
+[ 36081.443] rdpRRSetRdpOutputs: update output 0 left 0 top 0 width 1920 height 966
+[ 36081.444] rdpRRUpdateOutput:
+[ 36081.444] rdpLoadLayout: keylayout 0x00000409 variant  display 10
+[ 36081.445] rdpkeybChangeKeyboardControl:
+[ 36081.445] rdpkeybChangeKeyboardControl: autoRepeat on
+[ 36081.447] rdpkeybChangeKeyboardControl:
+[ 36081.448] rdpkeybChangeKeyboardControl: autoRepeat on
+[ 36081.546] rdpInDeferredRepeatCallback:
+[ 36081.546] rdpkeybChangeKeyboardControl:
+[ 36081.547] rdpkeybChangeKeyboardControl: autoRepeat off
+[ 36081.548] rdpInDeferredRepeatCallback:
+[ 36081.548] rdpkeybChangeKeyboardControl:
+[ 36081.549] rdpkeybChangeKeyboardControl: autoRepeat off
+[ 36087.923] (EE) dbus-core: error connecting to system bus: org.freedesktop.DBus.Error.FileNotFound (Failed to connect to socket /var/run/dbus/system_bus_socket: No such file or directory)
+[ 36088.466] rdpClientConGotConnection:
+[ 36088.469] rdpClientConGotConnection: g_sck_accept ok new_sck 20
+[ 36088.470] rdpClientConGotConnection: marking only clientCon 0x55911aa653f0 for disconnect
+[ 36088.472] rdpClientConGetConnection: idle_disconnect_timeout set to non-positive value, idle timer turned off
+[ 36088.473] rdpAddClientConToDev: adding clientCon 0x55911aa91a70
+[ 36088.477] rdpClientConDisconnect:
+[ 36088.479] rdpRemoveClientConFromDev: removing clientCon 0x55911aa653f0
+[ 36088.481] rdpClientConProcessMsgVersion: version 0 0 0 1
+[ 36088.488] rdpClientConProcessScreenSizeMsg: set width 1920 height 1008 bpp 16
+[ 36088.489] rdpClientConProcessScreenSizeMsg: shmemid 13 shmemptr 0x7fc52544a000
+[ 36088.494] rdpRRScreenSetSize: width 1920 height 1008 mmWidth 508 mmHeight 267
+[ 36088.498] rdpRRGetInfo:
+[ 36088.499]   screen resized to 1920x1008
+[ 36088.501] rdpClientConProcessScreenSizeMsg: RRScreenSizeSet ok=[1]
+[ 36088.502] rdpClientConProcessMsgClientInput: invalidate x 0 y 0 cx 1920 cy 1008
+[ 36088.573] rdpClientConProcessMsgClientInfo:
+[ 36088.575]   got client info bytes 5752
+[ 36088.579]   jpeg support 0
+[ 36088.580]   offscreen support 0
+[ 36088.581]   offscreen size 0
+[ 36088.582]   offscreen entries 0
+[ 36088.583]   client supports glyph cache but server disabled
+[ 36088.583]   client can not do offscreen to offscreen blits
+[ 36088.584]   client can do new(color) cursor
+[ 36088.585]   client can not do multimon
+[ 36088.586] rdpRRSetRdpOutputs: numCrtcs 1 numOutputs 1 monitorCount 0
+[ 36088.591] rdpRRSetRdpOutputs: update output 0 left 0 top 0 width 1920 height 1008
+[ 36088.592] rdpRRUpdateOutput:
+[ 36088.592] rdpLoadLayout: keylayout 0x00000409 variant  display 10
+[ 36088.593] rdpkeybChangeKeyboardControl:
+[ 36088.594] rdpkeybChangeKeyboardControl: autoRepeat on
+[ 36088.596] rdpkeybChangeKeyboardControl:
+[ 36088.597] rdpkeybChangeKeyboardControl: autoRepeat on
+[ 36088.695] rdpInDeferredRepeatCallback:
+[ 36088.699] rdpkeybChangeKeyboardControl:
+[ 36088.699] rdpkeybChangeKeyboardControl: autoRepeat off
+[ 36088.699] rdpInDeferredRepeatCallback:
+[ 36088.700] rdpkeybChangeKeyboardControl:
+[ 36088.707] rdpkeybChangeKeyboardControl: autoRepeat off
+[ 36094.746] rdpClientConRecv: g_sck_recv failed(returned 0)
+[ 36094.749] rdpClientConRecvMsg: error
+[ 36094.759] rdpClientConCheck: rdpClientConGotData failed
+[ 36094.759] rdpClientConDisconnect:
+[ 36094.759] rdpRemoveClientConFromDev: removing clientCon 0x55911aa91a70
+[ 36096.139] rdpClientConGotConnection:
+[ 36096.140] rdpClientConGotConnection: g_sck_accept ok new_sck 7
+[ 36096.140] rdpClientConGetConnection: idle_disconnect_timeout set to non-positive value, idle timer turned off
+[ 36096.140] rdpAddClientConToDev: adding first clientCon 0x55911aa653f0
+[ 36096.141] rdpClientConProcessMsgVersion: version 0 0 0 1
+[ 36096.141] rdpClientConProcessScreenSizeMsg: set width 1016 height 668 bpp 16
+[ 36096.141] rdpClientConProcessScreenSizeMsg: shmemid 14 shmemptr 0x7fc54f03d000
+[ 36096.141] rdpRRScreenSetSize: width 1016 height 668 mmWidth 269 mmHeight 177
+[ 36096.142] rdpRRGetInfo:
+[ 36096.142]   screen resized to 1016x668
+[ 36096.145] rdpClientConProcessScreenSizeMsg: RRScreenSizeSet ok=[1]
+[ 36096.146] rdpClientConProcessMsgClientInput: invalidate x 0 y 0 cx 1016 cy 668
+[ 36096.146] rdpClientConProcessMsgClientInfo:
+[ 36096.146]   got client info bytes 5752
+[ 36096.147]   jpeg support 0
+[ 36096.147]   offscreen support 0
+[ 36096.148]   offscreen size 0
+[ 36096.149]   offscreen entries 0
+[ 36096.150]   client supports glyph cache but server disabled
+[ 36096.150]   client can not do offscreen to offscreen blits
+[ 36096.150]   client can do new(color) cursor
+[ 36096.151]   client can not do multimon
+[ 36096.151] rdpRRSetRdpOutputs: numCrtcs 1 numOutputs 1 monitorCount 0
+[ 36096.151] rdpRRSetRdpOutputs: update output 0 left 0 top 0 width 1016 height 668
+[ 36096.152] rdpRRUpdateOutput:
+[ 36096.152] rdpLoadLayout: keylayout 0x00000409 variant  display 10
+[ 36096.153] rdpkeybChangeKeyboardControl:
+[ 36096.153] rdpkeybChangeKeyboardControl: autoRepeat on
+[ 36096.154] rdpkeybChangeKeyboardControl:
+[ 36096.155] rdpkeybChangeKeyboardControl: autoRepeat on
+[ 36096.253] rdpInDeferredRepeatCallback:
+[ 36096.253] rdpkeybChangeKeyboardControl:
+[ 36096.254] rdpkeybChangeKeyboardControl: autoRepeat off
+[ 36096.255] rdpInDeferredRepeatCallback:
+[ 36096.256] rdpkeybChangeKeyboardControl:
+[ 36096.256] rdpkeybChangeKeyboardControl: autoRepeat off
+[ 36097.924] (EE) dbus-core: error connecting to system bus: org.freedesktop.DBus.Error.FileNotFound (Failed to connect to socket /var/run/dbus/system_bus_socket: No such file or directory)
+[ 36105.029] rdpClientConRecv: g_sck_recv failed(returned 0)
+[ 36105.030] rdpClientConRecvMsg: error
+[ 36105.031] rdpClientConCheck: rdpClientConGotData failed
+[ 36105.032] rdpClientConDisconnect:
+[ 36105.032] rdpRemoveClientConFromDev: removing clientCon 0x55911aa653f0
+[ 36107.927] (EE) dbus-core: error connecting to system bus: org.freedesktop.DBus.Error.FileNotFound (Failed to connect to socket /var/run/dbus/system_bus_socket: No such file or directory)
+[ 36117.937] (EE) dbus-core: error connecting to system bus: org.freedesktop.DBus.Error.FileNotFound (Failed to connect to socket /var/run/dbus/system_bus_socket: No such file or directory)
+[ 36127.948] (EE) dbus-core: error connecting to system bus: org.freedesktop.DBus.Error.FileNotFound (Failed to connect to socket /var/run/dbus/system_bus_socket: No such file or directory)
+[ 36137.957] (EE) dbus-core: error connecting to system bus: org.freedesktop.DBus.Error.FileNotFound (Failed to connect to socket /var/run/dbus/system_bus_socket: No such file or directory)
+[ 36147.967] (EE) dbus-core: error connecting to system bus: org.freedesktop.DBus.Error.FileNotFound (Failed to connect to socket /var/run/dbus/system_bus_socket: No such file or directory)
+[ 36157.975] (EE) dbus-core: error connecting to system bus: org.freedesktop.DBus.Error.FileNotFound (Failed to connect to socket /var/run/dbus/system_bus_socket: No such file or directory)
+[ 36164.504] rdpClientConGotConnection:
+[ 36164.504] rdpClientConGotConnection: g_sck_accept ok new_sck 7
+[ 36164.504] rdpClientConGetConnection: idle_disconnect_timeout set to non-positive value, idle timer turned off
+[ 36164.504] rdpAddClientConToDev: adding first clientCon 0x55911ab58520
+[ 36164.505] rdpClientConProcessMsgVersion: version 0 0 0 1
+[ 36164.505] rdpClientConProcessScreenSizeMsg: set width 1920 height 966 bpp 16
+[ 36164.505] rdpClientConProcessScreenSizeMsg: shmemid 15 shmemptr 0x7fc525471000
+[ 36164.505] rdpRRScreenSetSize: width 1920 height 966 mmWidth 508 mmHeight 256
+[ 36164.506] rdpRRGetInfo:
+[ 36164.531]   screen resized to 1920x966
+[ 36164.533] rdpClientConProcessScreenSizeMsg: RRScreenSizeSet ok=[1]
+[ 36164.534] rdpClientConProcessMsgClientInput: invalidate x 0 y 0 cx 1920 cy 966
+[ 36164.535] rdpClientConProcessMsgClientInfo:
+[ 36164.535]   got client info bytes 5752
+[ 36164.536]   jpeg support 0
+[ 36164.536]   offscreen support 0
+[ 36164.537]   offscreen size 0
+[ 36164.537]   offscreen entries 0
+[ 36164.538]   client supports glyph cache but server disabled
+[ 36164.539]   client can not do offscreen to offscreen blits
+[ 36164.539]   client can do new(color) cursor
+[ 36164.540]   client can not do multimon
+[ 36164.540] rdpRRSetRdpOutputs: numCrtcs 1 numOutputs 1 monitorCount 0
+[ 36164.541] rdpRRSetRdpOutputs: update output 0 left 0 top 0 width 1920 height 966
+[ 36164.541] rdpRRUpdateOutput:
+[ 36164.542] rdpLoadLayout: keylayout 0x00000409 variant  display 10
+[ 36164.543] rdpkeybChangeKeyboardControl:
+[ 36164.544] rdpkeybChangeKeyboardControl: autoRepeat on
+[ 36164.546] rdpkeybChangeKeyboardControl:
+[ 36164.547] rdpkeybChangeKeyboardControl: autoRepeat on
+[ 36164.645] rdpInDeferredRepeatCallback:
+[ 36164.645] rdpkeybChangeKeyboardControl:
+[ 36164.646] rdpkeybChangeKeyboardControl: autoRepeat off
+[ 36164.647] rdpInDeferredRepeatCallback:
+[ 36164.647] rdpkeybChangeKeyboardControl:
+[ 36164.648] rdpkeybChangeKeyboardControl: autoRepeat off
+[ 36166.231] rdpClientConGotConnection:
+[ 36166.232] rdpClientConGotConnection: g_sck_accept ok new_sck 20
+[ 36166.232] rdpClientConGotConnection: marking only clientCon 0x55911ab58520 for disconnect
+[ 36166.233] rdpClientConGetConnection: idle_disconnect_timeout set to non-positive value, idle timer turned off
+[ 36166.233] rdpAddClientConToDev: adding clientCon 0x55911aa653f0
+[ 36166.234] rdpClientConDisconnect:
+[ 36166.236] rdpRemoveClientConFromDev: removing clientCon 0x55911ab58520
+[ 36166.240] rdpClientConProcessMsgVersion: version 0 0 0 1
+[ 36166.240] rdpClientConProcessScreenSizeMsg: set width 1920 height 966 bpp 16
+[ 36166.242] rdpClientConProcessScreenSizeMsg: shmemid 16 shmemptr 0x7fc525471000
+[ 36166.242] rdpClientConProcessMsgClientInput: invalidate x 0 y 0 cx 1920 cy 966
+[ 36166.250] rdpClientConProcessMsgClientInfo:
+[ 36166.251]   got client info bytes 5752
+[ 36166.251]   jpeg support 0
+[ 36166.252]   offscreen support 0
+[ 36166.252]   offscreen size 0
+[ 36166.252]   offscreen entries 0
+[ 36166.253]   client supports glyph cache but server disabled
+[ 36166.253]   client can not do offscreen to offscreen blits
+[ 36166.253]   client can do new(color) cursor
+[ 36166.254]   client can not do multimon
+[ 36166.254] rdpRRSetRdpOutputs: numCrtcs 1 numOutputs 1 monitorCount 0
+[ 36166.254] rdpRRSetRdpOutputs: update output 0 left 0 top 0 width 1920 height 966
+[ 36166.254] rdpRRUpdateOutput:
+[ 36166.255] rdpLoadLayout: keylayout 0x00000409 variant  display 10
+[ 36166.255] rdpkeybChangeKeyboardControl:
+[ 36166.256] rdpkeybChangeKeyboardControl: autoRepeat on
+[ 36166.260] rdpkeybChangeKeyboardControl:
+[ 36166.260] rdpkeybChangeKeyboardControl: autoRepeat on
+[ 36166.356] rdpInDeferredRepeatCallback:
+[ 36166.357] rdpkeybChangeKeyboardControl:
+[ 36166.357] rdpkeybChangeKeyboardControl: autoRepeat off
+[ 36166.361] rdpInDeferredRepeatCallback:
+[ 36166.361] rdpkeybChangeKeyboardControl:
+[ 36166.362] rdpkeybChangeKeyboardControl: autoRepeat off
+[ 36167.977] (EE) dbus-core: error connecting to system bus: org.freedesktop.DBus.Error.FileNotFound (Failed to connect to socket /var/run/dbus/system_bus_socket: No such file or directory)
+[ 36177.987] (EE) dbus-core: error connecting to system bus: org.freedesktop.DBus.Error.FileNotFound (Failed to connect to socket /var/run/dbus/system_bus_socket: No such file or directory)
+[ 36187.996] (EE) dbus-core: error connecting to system bus: org.freedesktop.DBus.Error.FileNotFound (Failed to connect to socket /var/run/dbus/system_bus_socket: No such file or directory)
+[ 36198.007] (EE) dbus-core: error connecting to system bus: org.freedesktop.DBus.Error.FileNotFound (Failed to connect to socket /var/run/dbus/system_bus_socket: No such file or directory)
+[ 36208.016] (EE) dbus-core: error connecting to system bus: org.freedesktop.DBus.Error.FileNotFound (Failed to connect to socket /var/run/dbus/system_bus_socket: No such file or directory)
+[ 36218.027] (EE) dbus-core: error connecting to system bus: org.freedesktop.DBus.Error.FileNotFound (Failed to connect to socket /var/run/dbus/system_bus_socket: No such file or directory)
+[ 36228.035] (EE) dbus-core: error connecting to system bus: org.freedesktop.DBus.Error.FileNotFound (Failed to connect to socket /var/run/dbus/system_bus_socket: No such file or directory)
+[ 36238.043] (EE) dbus-core: error connecting to system bus: org.freedesktop.DBus.Error.FileNotFound (Failed to connect to socket /var/run/dbus/system_bus_socket: No such file or directory)
+[ 36248.053] (EE) dbus-core: error connecting to system bus: org.freedesktop.DBus.Error.FileNotFound (Failed to connect to socket /var/run/dbus/system_bus_socket: No such file or directory)
+[ 36258.063] (EE) dbus-core: error connecting to system bus: org.freedesktop.DBus.Error.FileNotFound (Failed to connect to socket /var/run/dbus/system_bus_socket: No such file or directory)
+[ 36265.439] rdpClientConGotConnection:
+[ 36265.439] rdpClientConGotConnection: g_sck_accept ok new_sck 7
+[ 36265.439] rdpClientConGotConnection: marking only clientCon 0x55911aa653f0 for disconnect
+[ 36265.440] rdpClientConGetConnection: idle_disconnect_timeout set to non-positive value, idle timer turned off
+[ 36265.440] rdpAddClientConToDev: adding clientCon 0x55911ab58520
+[ 36265.440] rdpClientConDisconnect:
+[ 36265.440] rdpRemoveClientConFromDev: removing clientCon 0x55911aa653f0
+[ 36265.442] rdpClientConProcessMsgVersion: version 0 0 0 1
+[ 36265.442] rdpClientConProcessScreenSizeMsg: set width 1920 height 995 bpp 16
+[ 36265.442] rdpClientConProcessScreenSizeMsg: shmemid 17 shmemptr 0x7fc525456000
+[ 36265.443] rdpRRScreenSetSize: width 1920 height 995 mmWidth 508 mmHeight 263
+[ 36265.444] rdpRRGetInfo:
+[ 36265.445]   screen resized to 1920x995
+[ 36265.446] rdpClientConProcessScreenSizeMsg: RRScreenSizeSet ok=[1]
+[ 36265.446] rdpClientConProcessMsgClientInput: invalidate x 0 y 0 cx 1920 cy 995
+[ 36267.273] rdpClientConProcessMsgClientInfo:
+[ 36267.274]   got client info bytes 5752
+[ 36267.274]   jpeg support 0
+[ 36267.275]   offscreen support 0
+[ 36267.276]   offscreen size 0
+[ 36267.276]   offscreen entries 0
+[ 36267.277]   client supports glyph cache but server disabled
+[ 36267.277]   client can not do offscreen to offscreen blits
+[ 36267.278]   client can do new(color) cursor
+[ 36267.278]   client can not do multimon
+[ 36267.279] rdpRRSetRdpOutputs: numCrtcs 1 numOutputs 1 monitorCount 0
+[ 36267.280] rdpRRSetRdpOutputs: update output 0 left 0 top 0 width 1920 height 995
+[ 36267.281] rdpRRUpdateOutput:
+[ 36267.281] rdpLoadLayout: keylayout 0x00000409 variant  display 10
+[ 36267.282] rdpkeybChangeKeyboardControl:
+[ 36267.283] rdpkeybChangeKeyboardControl: autoRepeat on
+[ 36267.286] rdpkeybChangeKeyboardControl:
+[ 36267.287] rdpkeybChangeKeyboardControl: autoRepeat on
+[ 36267.384] rdpInDeferredRepeatCallback:
+[ 36267.384] rdpkeybChangeKeyboardControl:
+[ 36267.384] rdpkeybChangeKeyboardControl: autoRepeat off
+[ 36267.387] rdpInDeferredRepeatCallback:
+[ 36267.387] rdpkeybChangeKeyboardControl:
+[ 36267.387] rdpkeybChangeKeyboardControl: autoRepeat off
+[ 36268.065] (EE) dbus-core: error connecting to system bus: org.freedesktop.DBus.Error.FileNotFound (Failed to connect to socket /var/run/dbus/system_bus_socket: No such file or directory)
+[ 36278.067] (EE) dbus-core: error connecting to system bus: org.freedesktop.DBus.Error.FileNotFound (Failed to connect to socket /var/run/dbus/system_bus_socket: No such file or directory)
+[ 36278.256] rdpClientConRecv: g_sck_recv failed(returned 0)
+[ 36278.256] rdpClientConRecvMsg: error
+[ 36278.256] rdpClientConCheck: rdpClientConGotData failed
+[ 36278.257] rdpClientConDisconnect:
+[ 36278.257] rdpRemoveClientConFromDev: removing clientCon 0x55911ab58520
+[ 36288.075] (EE) dbus-core: error connecting to system bus: org.freedesktop.DBus.Error.FileNotFound (Failed to connect to socket /var/run/dbus/system_bus_socket: No such file or directory)
+[ 36298.083] (EE) dbus-core: error connecting to system bus: org.freedesktop.DBus.Error.FileNotFound (Failed to connect to socket /var/run/dbus/system_bus_socket: No such file or directory)
+[ 36308.091] (EE) dbus-core: error connecting to system bus: org.freedesktop.DBus.Error.FileNotFound (Failed to connect to socket /var/run/dbus/system_bus_socket: No such file or directory)
