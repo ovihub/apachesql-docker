@@ -29,6 +29,12 @@ services:
       - ./mysql_db:/var/lib/mysql
     ports:
       - 3306:3306
+  postgresql:
+    image: postgres
+    restart: always
+    environment:
+      POSTGRES_PASSWORD: khaldrogo
+      POSTGRES_DB: test_db
   phpmyadmin:
     image: phpmyadmin/phpmyadmin
     ports:
@@ -40,6 +46,21 @@ services:
     networks:
       - backend
       - frontend
+  pgadmin:
+    container_name: pgadmin_container
+    image: dpage/pgadmin4
+    environment:
+      PGADMIN_DEFAULT_EMAIL: ${PGADMIN_DEFAULT_EMAIL:-pgadmin4@pgadmin.org}
+      PGADMIN_DEFAULT_PASSWORD: ${PGADMIN_DEFAULT_PASSWORD:-admin}
+      PGADMIN_CONFIG_SERVER_MODE: 'False'
+    volumes:
+       - pgadmin:/var/lib/pgadmin
+
+    ports:
+      - "${PGADMIN_PORT:-5050}:80"
+    networks:
+      - postgres
+    restart: unless-stopped
   mysql-workbench:
     image: ghcr.io/linuxserver/mysql-workbench
     container_name: mysql-workbench
@@ -55,6 +76,18 @@ services:
       - IPC_LOCK
     networks: 
       - backend
+  mailhog:
+    image: mailhog/mailhog:latest
+    restart: always
+    ports:
+      - 1025:1025
+      - 8025:8025
+
 networks:
   frontend:
   backend:
+  postgres:
+
+volumes:
+    postgres:
+    pgadmin:

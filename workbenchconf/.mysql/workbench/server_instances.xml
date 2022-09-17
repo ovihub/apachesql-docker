@@ -1,23 +1,23 @@
 <?xml version="1.0"?>
 <data grt_format="2.0">
-  <value _ptr_="0x5564c14c08f0" type="list" content-type="object" content-struct-name="db.mgmt.ServerInstance">
+  <value _ptr_="0x5586420e5a20" type="list" content-type="object" content-struct-name="db.mgmt.ServerInstance">
     <value type="object" struct-name="db.mgmt.ServerInstance" id="ab566788-b098-11eb-afdf-0242ac150003" struct-checksum="0x367436e2">
       <link type="object" struct-name="db.mgmt.Connection" key="connection">8d034b20-b098-11eb-afdf-0242ac150003</link>
-      <value _ptr_="0x5564c1b14c30" type="dict" key="loginInfo"/>
-      <value _ptr_="0x5564c1b14cb0" type="dict" key="serverInfo">
+      <value _ptr_="0x55864238ef00" type="dict" key="loginInfo"/>
+      <value _ptr_="0x55864239f620" type="dict" key="serverInfo">
         <value type="int" key="setupPending">1</value>
       </value>
       <value type="string" key="name">localenv</value>
     </value>
     <value type="object" struct-name="db.mgmt.ServerInstance" id="f8313226-fb67-11eb-aab6-0242ac170005" struct-checksum="0x367436e2">
-      <value _ptr_="0x5564c1b50540" type="dict" key="loginInfo">
+      <value _ptr_="0x5586423b0620" type="dict" key="loginInfo">
         <value type="string" key="ssh.hostName"></value>
         <value type="string" key="ssh.key">~/.ssh/ssh_private_key</value>
         <value type="string" key="ssh.localPort">3306</value>
         <value type="int" key="ssh.useKey">0</value>
         <value type="string" key="ssh.userName">mysql</value>
       </value>
-      <value _ptr_="0x5564c1b505c0" type="dict" key="serverInfo">
+      <value _ptr_="0x55864239fe20" type="dict" key="serverInfo">
         <value type="int" key="setupPending">1</value>
       </value>
       <value type="string" key="name"></value>

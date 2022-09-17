@@ -1,4 +1,4 @@
-06:58:58 [INF][   WBContext UI]: Initializing workbench context UI with these values:
+12:12:45 [INF][   WBContext UI]: Initializing workbench context UI with these values:
 	base dir: /usr/share/mysql-workbench
 	plugin path: /usr/lib/mysql-workbench/plugins
 	struct path: /usr/share/mysql-workbench/grt
@@ -12,37 +12,31 @@
 	Force SW rendering: No
 	Force OpenGL: No
 	quit when done: No
-06:58:58 [INF][      WBContext]: WbContext::init
-06:58:59 [INF][            WBA]: Looking for extension modules for WBA...
-06:58:59 [INF][            WBA]: 0 extension modules found
-06:58:59 [WRN][            grt]: Duplicate plugin name wb.tools.cmdlineClient	There is more than one plugin with the name wb.tools.cmdlineClient (in PyWbUtils and PyWbUtils).
-06:58:59 [WRN][            grt]: /config/.mysql/workbench/server_instances.xml:11: link '8680077a-b098-11eb-afdf-0242ac150003' <object GrtObject> key=owner could not be resolved
-06:58:59 [WRN][            grt]: Duplicate plugin name wb.tools.cmdlineClient	There is more than one plugin with the name wb.tools.cmdlineClient (in PyWbUtils and PyWbUtils).
-06:58:59 [INF][      WBContext]: System info:
+12:12:45 [INF][      WBContext]: WbContext::init
+12:12:46 [INF][            WBA]: Looking for extension modules for WBA...
+12:12:46 [INF][            WBA]: 0 extension modules found
+12:12:46 [WRN][            grt]: Duplicate plugin name wb.tools.cmdlineClient	There is more than one plugin with the name wb.tools.cmdlineClient (in PyWbUtils and PyWbUtils).
+12:12:47 [WRN][            grt]: Duplicate plugin name wb.tools.cmdlineClient	There is more than one plugin with the name wb.tools.cmdlineClient (in PyWbUtils and PyWbUtils).
+12:12:47 [INF][      WBContext]: System info:
  	MySQL Workbench Community (GPL) for Linux/Unix version 8.0.25 CE build 788958 (64 bit)
 	Configuration Directory: /config/.mysql/workbench
 	Data Directory: /usr/share/mysql-workbench
 	Cairo Version: 1.16.0
 	OS: Ubuntu 20.04 x86_64
-	CPU: 4x Intel(R) Core(TM) i7-6600U CPU @ 2.60GHz (2600.091MHz) - 11.59GiB RAM
+	CPU: 4x Intel(R) Core(TM) i7-6600U CPU @ 2.60GHz (2599.997MHz) - 11.59GiB RAM
 No video adapter info available
 	Distribution: Ubuntu 20.04.2 LTS
 
 	Fips mode enabled: no
 
-06:58:59 [INF][    WQE backend]: Found auto-save workspace /config/.mysql/workbench/sql_workspaces/localenv-1.autosave
-07:01:20 [ERR][SQL Editor Form]: SqlEditorForm: exception in do_connect method: Exception: Invalid hostname URI
-07:01:20 [WRN][SQL Editor Form]: Invalid hostname URI
-07:01:20 [ERR][SQL Editor Form]: Connection failed but remote admin does not seem to be available, rethrowing exception...
-07:01:20 [ERR][  GRTDispatcher]: exception in grt execute_task, continuing: Exception: Invalid hostname URI
-07:01:20 [ERR][  GRTDispatcher]: worker: task 'execute sql queries' has failed with error:.Invalid hostname URI
-07:01:20 [ERR][    WQE backend]: Got an exception during connection: Invalid hostname URI
-07:01:20 [ERR][SQL Editor Form]: SQL editor could not be connected: Invalid hostname URI
-07:01:20 [ERR][SQL Editor Form]: Your connection attempt failed for user 'root' to the MySQL server at remote.lotemarketting.com.au/pma:3306:
-  Invalid hostname URI
-
-Please:
-1 Check that MySQL is running on address remote.lotemarketting.com.au/pma
-2 Check that MySQL is reachable on port 3306 (note: 3306 is the default, but this can be changed)
-3 Check the user root has rights to connect to remote.lotemarketting.com.au/pma from your address (MySQL rights define what clients can connect to the server and from which machines) 
-4 Make sure you are both providing a password if needed and using the correct password for remote.lotemarketting.com.au/pma connecting from the host address you're connecting from
+12:12:47 [INF][    WQE backend]: Found auto-save workspace /config/.mysql/workbench/sql_workspaces/localenv-1.autosave
+12:22:18 [INF][SQL Editor Form]: Opened connection 'localenv' to mariadb.org binary distribution version 10.5.9-MariaDB-1:10.5.9+maria~focal
+12:22:18 [ERR][      WBContext]: Unsupported server version: mariadb.org binary distribution 10.5.9-MariaDB-1:10.5.9+maria~focal
+12:22:32 [ERR][SQL Editor Form]: SqlEditorForm: exception in do_connect method: Exception: Unable to connect to localhost
+12:22:32 [WRN][SQL Editor Form]: Unable to connect to localhost
+12:22:32 [INF][SQL Editor Form]: Error 2003 connecting to server, assuming server is down and opening editor with no connection
+12:22:32 [INF][SQL Editor Form]: Error 2003 connecting to server, assuming server is down and opening editor with no connection
+12:22:32 [INF][  column_widths]: Initializing column width cache for Mysql@127.0.0.1_3306
+12:22:32 [INF][          Admin]: Auto-created instance profile for connection 
+12:22:33 [ERR][wb_admin_control.py:init:307]: Error connecting to MySQL: Unable to connect to localhost (code 2003)
+12:22:33 [ERR][wb_admin_control.py:server_polling_thread:561]: Error creating SQL connection for monitoring: MySQLError('Unable to connect to localhost (code 2003)')

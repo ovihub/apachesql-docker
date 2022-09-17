@@ -1,4 +1,4 @@
-12:27:41 [INF][   WBContext UI]: Initializing workbench context UI with these values:
+09:53:05 [INF][   WBContext UI]: Initializing workbench context UI with these values:
 	base dir: /usr/share/mysql-workbench
 	plugin path: /usr/lib/mysql-workbench/plugins
 	struct path: /usr/share/mysql-workbench/grt
@@ -12,49 +12,24 @@
 	Force SW rendering: No
 	Force OpenGL: No
 	quit when done: No
-12:27:41 [INF][      WBContext]: WbContext::init
-12:27:42 [INF][            WBA]: Looking for extension modules for WBA...
-12:27:42 [INF][            WBA]: 0 extension modules found
-12:27:42 [WRN][            grt]: Duplicate plugin name wb.tools.cmdlineClient	There is more than one plugin with the name wb.tools.cmdlineClient (in PyWbUtils and PyWbUtils).
-12:27:42 [WRN][            grt]: /config/.mysql/workbench/connections.xml:25: link '9aeaafb2-fb66-11eb-aab6-0242ac170005' <object GrtObject> key=owner could not be resolved
-12:27:42 [WRN][            grt]: /config/.mysql/workbench/server_instances.xml:13: link 'f2c0be2e-fb67-11eb-aab6-0242ac170005' <object db.mgmt.Connection> key=connection could not be resolved
-12:27:42 [WRN][            grt]: /config/.mysql/workbench/server_instances.xml:25: link '9aeaafb2-fb66-11eb-aab6-0242ac170005' <object GrtObject> key=owner could not be resolved
-12:27:42 [WRN][            grt]: Duplicate plugin name wb.tools.cmdlineClient	There is more than one plugin with the name wb.tools.cmdlineClient (in PyWbUtils and PyWbUtils).
-12:27:42 [INF][      WBContext]: System info:
- 	MySQL Workbench Community (GPL) for Linux/Unix version 8.0.25 CE build 788958 (64 bit)
+09:53:05 [INF][      WBContext]: WbContext::init
+09:53:06 [INF][            WBA]: Looking for extension modules for WBA...
+09:53:06 [INF][            WBA]: 0 extension modules found
+09:53:07 [WRN][            grt]: Duplicate plugin name wb.tools.cmdlineClient	There is more than one plugin with the name wb.tools.cmdlineClient (in PyWbUtils and PyWbUtils).
+09:53:07 [WRN][            grt]: /config/.mysql/workbench/connections.xml:25: link 'b0b44fea-fb68-11eb-a3b8-0242ac120003' <object GrtObject> key=owner could not be resolved
+09:53:07 [WRN][            grt]: Duplicate plugin name wb.tools.cmdlineClient	There is more than one plugin with the name wb.tools.cmdlineClient (in PyWbUtils and PyWbUtils).
+09:53:07 [INF][      WBContext]: System info:
+ 	MySQL Workbench Community (GPL) for Linux/Unix version 8.0.30 CE build 2054668 (64 bit)
 	Configuration Directory: /config/.mysql/workbench
 	Data Directory: /usr/share/mysql-workbench
 	Cairo Version: 1.16.0
-	OS: Ubuntu 20.04 x86_64
-	CPU: 4x Intel(R) Core(TM) i7-6600U CPU @ 2.60GHz (2262.218MHz) - 11.59GiB RAM
+	OS:  x86_64
+	CPU: 4x Intel(R) Core(TM) i7-6600U CPU @ 2.60GHz (2808.000MHz) - 9.22GiB RAM
 No video adapter info available
-	Distribution: Ubuntu 20.04.2 LTS
+	Distribution: Ubuntu 22.04.1 LTS
 
 	Fips mode enabled: no
 
-12:27:42 [INF][    WQE backend]: Found auto-save workspace /config/.mysql/workbench/sql_workspaces/-1.autosave
-12:27:42 [INF][    WQE backend]: Found auto-save workspace /config/.mysql/workbench/sql_workspaces/localenv-1.autosave
-12:27:47 [ERR][  GRTDispatcher]: exception in grt execute_task, continuing: Exception: Access denied for user 'root'@'172.18.0.3' (using password: NO)
-12:27:47 [ERR][  GRTDispatcher]: worker: task 'execute sql queries' has failed with error:.Access denied for user 'root'@'172.18.0.3' (using password: NO)
-12:27:52 [INF][SQL Editor Form]: Opened connection 'localenv' to mariadb.org binary distribution version 10.5.9-MariaDB-1:10.5.9+maria~focal
-12:27:53 [ERR][      WBContext]: Unsupported server version: mariadb.org binary distribution 10.5.9-MariaDB-1:10.5.9+maria~focal
-12:28:48 [ERR][  GRTDispatcher]: exception in grt execute_task, continuing: Exception: Unable to connect to localhost
-12:28:48 [ERR][  GRTDispatcher]: worker: task 'wizard task' has failed with error:.Unable to connect to localhost
-12:29:12 [ERR][  GRTDispatcher]: exception in grt execute_task, continuing: Exception: Unable to connect to localhost
-12:29:12 [ERR][  GRTDispatcher]: worker: task 'wizard task' has failed with error:.Unable to connect to localhost
-12:29:26 [INF][            grt]: Fetching schema list.	
-12:29:26 [INF][            grt]: OK	
-12:29:32 [INF][            grt]: Fetching table list.	
-12:29:32 [INF][            grt]:     72 items from zigo	
-12:29:32 [INF][            grt]: OK	
-12:29:32 [INF][            grt]: Fetching view list.	
-12:29:32 [INF][            grt]:     0 items from zigo	
-12:29:32 [INF][            grt]: OK	
-12:29:32 [INF][            grt]: Fetching routine list.	
-12:29:32 [INF][            grt]:     0 items from zigo	
-12:29:32 [INF][            grt]: OK	
-12:29:32 [INF][            grt]: Fetching trigger list.	
-12:29:32 [INF][            grt]:     0 items from zigo	
-12:29:32 [INF][            grt]: OK	
-12:29:34 [WRN][     lf_listbox]: mforms::ListBoxImpl::set_heading('Objects to Process') not implementedmforms::ListBoxImpl::set_heading('Excluded Objects') not implementedCouldn't connect to D-Bus system bus, Could not connect: No such file or directory
-12:32:36 [WRN][               ]: UI creation function from /usr/lib/mysql-workbench/plugins/wb.printing.wbp.so returned 0
+09:53:07 [INF][    WQE backend]: Found auto-save workspace /config/.mysql/workbench/sql_workspaces/-1.autosave
+09:53:07 [INF][    WQE backend]: Found auto-save workspace /config/.mysql/workbench/sql_workspaces/localenv-1.autosave
+09:53:07 [WRN][       WBModule]: OS not found on supported OS list. OS string: ' x86_64'

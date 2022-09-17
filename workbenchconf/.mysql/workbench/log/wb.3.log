@@ -1,4 +1,4 @@
-07:31:09 [INF][   WBContext UI]: Initializing workbench context UI with these values:
+06:58:58 [INF][   WBContext UI]: Initializing workbench context UI with these values:
 	base dir: /usr/share/mysql-workbench
 	plugin path: /usr/lib/mysql-workbench/plugins
 	struct path: /usr/share/mysql-workbench/grt
@@ -12,39 +12,37 @@
 	Force SW rendering: No
 	Force OpenGL: No
 	quit when done: No
-07:31:09 [INF][      WBContext]: WbContext::init
-07:31:10 [INF][            WBA]: Looking for extension modules for WBA...
-07:31:10 [INF][            WBA]: 0 extension modules found
-07:31:10 [WRN][            grt]: Duplicate plugin name wb.tools.cmdlineClient	There is more than one plugin with the name wb.tools.cmdlineClient (in PyWbUtils and PyWbUtils).
-07:31:10 [WRN][            grt]: Duplicate plugin name wb.tools.cmdlineClient	There is more than one plugin with the name wb.tools.cmdlineClient (in PyWbUtils and PyWbUtils).
-07:31:10 [INF][      WBContext]: System info:
- 	MySQL Workbench Community (GPL) for Linux/Unix version 8.0.24 CE build 681332 (64 bit)
+06:58:58 [INF][      WBContext]: WbContext::init
+06:58:59 [INF][            WBA]: Looking for extension modules for WBA...
+06:58:59 [INF][            WBA]: 0 extension modules found
+06:58:59 [WRN][            grt]: Duplicate plugin name wb.tools.cmdlineClient	There is more than one plugin with the name wb.tools.cmdlineClient (in PyWbUtils and PyWbUtils).
+06:58:59 [WRN][            grt]: /config/.mysql/workbench/server_instances.xml:11: link '8680077a-b098-11eb-afdf-0242ac150003' <object GrtObject> key=owner could not be resolved
+06:58:59 [WRN][            grt]: Duplicate plugin name wb.tools.cmdlineClient	There is more than one plugin with the name wb.tools.cmdlineClient (in PyWbUtils and PyWbUtils).
+06:58:59 [INF][      WBContext]: System info:
+ 	MySQL Workbench Community (GPL) for Linux/Unix version 8.0.25 CE build 788958 (64 bit)
 	Configuration Directory: /config/.mysql/workbench
 	Data Directory: /usr/share/mysql-workbench
 	Cairo Version: 1.16.0
 	OS: Ubuntu 20.04 x86_64
-	CPU: 4x Intel(R) Core(TM) i7-6600U CPU @ 2.60GHz (2818.729MHz) - 11.59GiB RAM
+	CPU: 4x Intel(R) Core(TM) i7-6600U CPU @ 2.60GHz (2600.091MHz) - 11.59GiB RAM
 No video adapter info available
 	Distribution: Ubuntu 20.04.2 LTS
 
 	Fips mode enabled: no
 
-07:32:06 [ERR][ DbConnectPanel]: Unsupported server version: MySQL 10.5.9-MariaDB-1:10.5.9+maria~focal
-07:32:14 [INF][SQL Editor Form]: Opened connection 'localenv' to mariadb.org binary distribution version 10.5.9-MariaDB-1:10.5.9+maria~focal
-07:32:14 [INF][  column_widths]: Initializing column width cache for localenv
-07:32:14 [ERR][      WBContext]: Unsupported server version: mariadb.org binary distribution 10.5.9-MariaDB-1:10.5.9+maria~focal
-07:32:30 [INF][            grt]: Fetching schema list.	
-07:32:30 [INF][            grt]: OK	
-07:32:37 [INF][            grt]: Fetching table list.	
-07:32:37 [INF][            grt]:     50 items from lote	
-07:32:37 [INF][            grt]: OK	
-07:32:37 [INF][            grt]: Fetching view list.	
-07:32:37 [INF][            grt]:     1 items from lote	
-07:32:37 [INF][            grt]: OK	
-07:32:37 [INF][            grt]: Fetching routine list.	
-07:32:37 [INF][            grt]:     0 items from lote	
-07:32:37 [INF][            grt]: OK	
-07:32:37 [INF][            grt]: Fetching trigger list.	
-07:32:37 [INF][            grt]:     0 items from lote	
-07:32:37 [INF][            grt]: OK	
-07:32:38 [WRN][     lf_listbox]: mforms::ListBoxImpl::set_heading('Objects to Process') not implementedmforms::ListBoxImpl::set_heading('Excluded Objects') not implementedmforms::ListBoxImpl::set_heading('Objects to Process') not implementedmforms::ListBoxImpl::set_heading('Excluded Objects') not implemented
+06:58:59 [INF][    WQE backend]: Found auto-save workspace /config/.mysql/workbench/sql_workspaces/localenv-1.autosave
+07:01:20 [ERR][SQL Editor Form]: SqlEditorForm: exception in do_connect method: Exception: Invalid hostname URI
+07:01:20 [WRN][SQL Editor Form]: Invalid hostname URI
+07:01:20 [ERR][SQL Editor Form]: Connection failed but remote admin does not seem to be available, rethrowing exception...
+07:01:20 [ERR][  GRTDispatcher]: exception in grt execute_task, continuing: Exception: Invalid hostname URI
+07:01:20 [ERR][  GRTDispatcher]: worker: task 'execute sql queries' has failed with error:.Invalid hostname URI
+07:01:20 [ERR][    WQE backend]: Got an exception during connection: Invalid hostname URI
+07:01:20 [ERR][SQL Editor Form]: SQL editor could not be connected: Invalid hostname URI
+07:01:20 [ERR][SQL Editor Form]: Your connection attempt failed for user 'root' to the MySQL server at remote.lotemarketting.com.au/pma:3306:
+  Invalid hostname URI
+
+Please:
+1 Check that MySQL is running on address remote.lotemarketting.com.au/pma
+2 Check that MySQL is reachable on port 3306 (note: 3306 is the default, but this can be changed)
+3 Check the user root has rights to connect to remote.lotemarketting.com.au/pma from your address (MySQL rights define what clients can connect to the server and from which machines) 
+4 Make sure you are both providing a password if needed and using the correct password for remote.lotemarketting.com.au/pma connecting from the host address you're connecting from
